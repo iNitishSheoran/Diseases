@@ -1,0 +1,301 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #004aad, #007bff);
+  padding: 1rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.plus {
+  color: #00eaff;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-left: 6px;
+  text-shadow: 0 0 8px #00eaff, 0 0 15px #00bfff;
+  animation: glow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 6px #00eaff, 0 0 10px #00bfff;
+  }
+  to {
+    text-shadow: 0 0 16px #00eaff, 0 0 30px #00bfff;
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.8rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+.home {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 7rem 2rem;
+  overflow: hidden;
+  background: linear-gradient(180deg, #004aad, #002f73);
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/virus.png") repeat center center;
+  background-size: 250px;
+  opacity: 0.18;
+  z-index: 1;
+  filter: brightness(1.2) contrast(0.9);
+  animation: moveBg 60s linear infinite;
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 37, 98, 0.8), rgba(0, 50, 150, 0.8));
+  z-index: 2;
+}
+
+.home-content {
+  position: relative;
+  z-index: 3;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #e0e0e0;
+}
+
+.btn {
+  background: #ffd700;
+  color: #004aad;
+  padding: 0.9rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: #fff;
+  color: #004aad;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===============================
+   DISEASE SECTION
+================================= */
+.diseases {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.diseases h2 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 0.5rem;
+}
+
+.diseases p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+#diseaseSelect {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+#diseaseSelect:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 5px rgba(0, 74, 173, 0.4);
+}
+
+.disease-info {
+  margin-top: 2.5rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 850px;
+  margin: 3rem auto;
+}
+
+/* ===============================
+   HELP & ABOUT
+================================= */
+.help,
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.help h2,
+.about h2 {
+  color: #004aad;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.help p,
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+footer {
+  background: linear-gradient(90deg, #004aad, #00367a);
+  color: #fff;
+  text-align: center;
+  padding: 1.8rem 0;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-content p {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background: #004aad;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 0 0 0 15px;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: right;
+  }
+}
