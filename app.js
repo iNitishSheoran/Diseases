@@ -13,6 +13,112 @@ const diseases = {
     prevention: "Reduce salt and processed food, maintain healthy weight, exercise regularly, avoid tobacco and excessive alcohol, and check blood pressure periodically."
   },
 
+  "Influenza (Flu)": {
+  symptoms: "A sudden onset of high fever, chills, dry cough, sore throat, runny or blocked nose, muscle and joint pain, severe fatigue, loss of appetite, and headaches. In some cases, vomiting and diarrhea may also appear, especially in children.",
+  causes: "Caused by influenza viruses (Type A, B, and C) that spread easily through droplets when infected individuals cough, sneeze, or talk. The virus can also spread by touching contaminated surfaces.",
+  treatment: "Treatment focuses on rest, hydration, fever reducers, and antiviral drugs like oseltamivir or zanamivir in severe or early-diagnosed cases. Steam inhalation and warm fluids help relieve congestion.",
+  prevention: "Annual flu vaccination, frequent handwashing, wearing masks during outbreaks, avoiding close contact with infected persons, and maintaining strong immunity through a balanced diet and adequate sleep."
+},
+
+"Measles": {
+  symptoms: "High fever lasting 4–7 days, cough, runny nose, red watery eyes, Koplik spots inside the mouth, and a red blotchy rash that starts on the face and spreads downward across the body.",
+  causes: "Caused by the measles virus, which is highly contagious and spreads easily through respiratory droplets and direct contact with nasal or throat secretions.",
+  treatment: "There is no specific antiviral treatment. Supportive care includes hydration, vitamin A supplementation, fever control, and management of complications like pneumonia or diarrhea.",
+  prevention: "MMR vaccination is the most effective method. Good hygiene, isolation during infection, and keeping living spaces well-ventilated help reduce spread."
+},
+
+"Mumps": {
+  symptoms: "Swollen and painful salivary glands (parotid glands), fever, headache, muscle aches, fatigue, and difficulty chewing or swallowing. In severe cases, it may cause testicular or ovarian swelling.",
+  causes: "Caused by the mumps virus, transmitted through respiratory droplets, direct contact with saliva, or sharing contaminated utensils.",
+  treatment: "No specific antiviral. Pain relievers, cold packs on swollen glands, hydration, and rest are recommended. Most people recover fully.",
+  prevention: "MMR vaccination, avoiding sharing food or drinks, and maintaining good hygiene practices."
+},
+
+"HIV/AIDS": {
+  symptoms: "Early symptoms include fever, chills, rash, night sweats, swollen lymph nodes, muscle aches, and sore throat. As the disease progresses to AIDS, the immune system weakens, leading to frequent infections, weight loss, and fatigue.",
+  causes: "Caused by the Human Immunodeficiency Virus (HIV), transmitted through unprotected sexual contact, contaminated needles, blood transfusions, and from mother to child.",
+  treatment: "Lifelong antiretroviral therapy (ART) helps control the virus, improves immunity, and prevents progression to AIDS.",
+  prevention: "Safe sex practices, regular HIV testing, avoiding needle sharing, PrEP medication for high-risk individuals, and ensuring screened blood samples."
+},
+
+"Polio": {
+  symptoms: "Most infections are mild or asymptomatic. Severe cases cause fever, sore throat, headache, vomiting, muscle stiffness, and paralysis that may be permanent.",
+  causes: "Caused by the poliovirus, transmitted through contaminated food, water, or contact with infected feces.",
+  treatment: "No cure, only supportive treatment including pain relief, physical therapy, and respiratory support for paralysis.",
+  prevention: "Polio vaccination (OPV and IPV), proper sanitation, clean drinking water, and hygiene practices."
+},
+
+"Rabies": {
+  symptoms: "Early symptoms include fever, headache, and numbness or tingling at the bite site. Later symptoms involve anxiety, confusion, hallucinations, hydrophobia (fear of water), paralysis, and coma. It is almost always fatal once symptoms appear.",
+  causes: "Caused by the rabies virus transmitted through bites or scratches from infected animals.",
+  treatment: "Post-exposure prophylaxis (PEP) must be given immediately—wound cleaning, immunoglobulin, and vaccination. After symptom onset, survival is extremely rare.",
+  prevention: "Vaccinate pets, avoid stray animals, wear protective gear when handling animals, and seek immediate medical attention after any bite."
+},
+
+"Filariasis": {
+  symptoms: "Swelling of arms, legs, or genitals, fever, thickened skin, and repeated bacterial infections. Long-term infection may cause elephantiasis.",
+  causes: "Caused by parasitic worms transmitted by infected mosquitoes.",
+  treatment: "Diethylcarbamazine (DEC), albendazole, or ivermectin are used to kill the parasites. Hygiene and skin care reduce complications.",
+  prevention: "Mosquito control, using bed nets, wearing protective clothing, and taking mass drug administration (MDA) tablets in endemic areas."
+},
+
+"Leptospirosis": {
+  symptoms: "High fever, headache, chills, severe muscle pain, red eyes, jaundice, abdominal pain, vomiting, and in severe cases kidney or liver failure.",
+  causes: "Caused by Leptospira bacteria found in the urine of infected animals. Humans get infected by contact with contaminated water or soil.",
+  treatment: "Antibiotics such as doxycycline or penicillin. Severe cases require hospitalization and organ support.",
+  prevention: "Avoid swimming in contaminated water, wear boots and gloves when working outdoors, and control rodents."
+},
+
+"Zika Virus": {
+  symptoms: "Mild fever, rash, muscle pain, joint pain, red eyes, and headache. In pregnant women, Zika can cause birth defects like microcephaly.",
+  causes: "Spread mainly through Aedes mosquitoes, but also through sexual contact and from mother to fetus.",
+  treatment: "Supportive treatment including rest, hydration, and pain relief. No specific antiviral available.",
+  prevention: "Mosquito control, insect repellents, protective clothing, safe sex practices, and preventing mosquito breeding."
+},
+
+"Hepatitis A": {
+  symptoms: "Fatigue, sudden nausea, abdominal pain, clay-colored stools, loss of appetite, low-grade fever, and jaundice. Symptoms usually last several weeks.",
+  causes: "Caused by the Hepatitis A virus, spread through contaminated food, water, or close contact with an infected person.",
+  treatment: "Body recovers on its own with rest, hydration, nutritious diet, and avoidance of alcohol.",
+  prevention: "Hepatitis A vaccine, proper sanitation, clean drinking water, and good hand hygiene."
+},
+
+"Hepatitis C": {
+  symptoms: "Many cases show no symptoms. When present, symptoms include fatigue, jaundice, abdominal pain, and dark urine. Chronic infection leads to liver damage, cirrhosis, or cancer.",
+  causes: "Caused by Hepatitis C virus transmitted through contaminated blood or shared needles.",
+  treatment: "Direct-acting antiviral medications (DAAs) that cure most infections within 8–12 weeks.",
+  prevention: "Avoid shared needles, ensure screened blood transfusions, and safe medical practices."
+},
+
+"Scabies": {
+  symptoms: "Intense itching (especially at night), small bumps or blisters, and burrow marks on the skin, commonly between fingers, wrists, waist, and elbows.",
+  causes: "Caused by tiny mites (Sarcoptes scabiei) that burrow under the skin.",
+  treatment: "Topical permethrin cream, oral ivermectin, antihistamines for itching, and washing clothes & bedding.",
+  prevention: "Avoid close contact with infected persons, maintain hygiene, and clean bedding regularly."
+},
+
+"Ringworm": {
+  symptoms: "Circular ring-shaped rash, itchy and scaly skin, cracked patches, and hair loss in scalp infections.",
+  causes: "Caused by fungal infections that spread through direct skin contact or contaminated surfaces, towels, or pets.",
+  treatment: "Topical antifungals like clotrimazole, terbinafine, or oral medications in severe cases.",
+  prevention: "Keep skin dry, avoid sharing towels or combs, and maintain hygiene."
+},
+
+"Whooping Cough (Pertussis)": {
+  symptoms: "Mild cough that turns into severe uncontrollable coughing fits, followed by a 'whooping' sound. Can cause vomiting and breathing difficulty.",
+  causes: "Caused by Bordetella pertussis bacteria.",
+  treatment: "Antibiotics, especially in early stages, along with supportive care for cough.",
+  prevention: "DTaP vaccination for infants and booster doses for adults."
+},
+
+"Gout": {
+  symptoms: "Sudden intense joint pain, usually in the big toe, redness, swelling, warmth, and joint tenderness. Attacks can last days or weeks.",
+  causes: "Caused by high uric acid levels forming crystals in joints due to diet, genetics, kidney problems, or alcohol intake.",
+  treatment: "NSAIDs, colchicine, corticosteroids, and medications that lower uric acid over time like allopurinol.",
+  prevention: "Limit alcohol, red meat, sugary drinks; maintain healthy weight and hydration."
+},
+
+
   "Asthma": {
     symptoms: "Recurrent wheeze, coughing (often worse at night), chest tightness, and shortness of breath. Symptoms can be episodic and triggered by exercise or allergens.",
     causes: "Chronic airway inflammation caused by allergens (dust mites, pollen), respiratory infections, pollution, cold air, strong odors, or exercise. Genetic predisposition often plays a role.",
